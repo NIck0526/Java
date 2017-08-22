@@ -1,0 +1,40 @@
+package vo.child;
+import util.MyDate;
+/*
+ * super::
+ * 상위클래스를 지칭하는 키워드
+ * super();
+ * super.name;
+ * super.getDetails();
+ * 
+ * Sub Class
+ * ::
+ * Engineer - String tech
+ * Secretary - isBoss boolean
+ */
+import vo.parent.Employee;
+
+public class Manager extends Employee{
+	private String dept;
+	//생성자 추가..
+	public Manager(String ssn, String name, MyDate birthDate, double salary,
+			String dept){
+		/*this.ssn = ssn;
+		this.name = name;
+		this.birthDate = birthDate;
+		this.salary = salary;
+		*/
+		this.dept = dept;
+		super(ssn,name,birthDate,salary); // 생성자를 통해 접근
+
+		
+	}
+}
+
+
+
+
+
+
+
+

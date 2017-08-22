@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/team02_KostaEducation2/src/kosta/test/StudentAttendanceTest.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="kosta.test.StudentAttendanceTest"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="team02_KostaEducation2"/>
+</launchConfiguration>

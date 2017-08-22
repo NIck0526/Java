@@ -1,0 +1,11 @@
+package fly;
+
+//super,parent
+//super class와 다른점은 자식객체 생성시 Type으로서만 존재.
+public interface Flyer {
+	public abstract void fly();
+	abstract public void take_off();
+	void land(); //interface안에 메소드는 무조건 public abstract으로 지정된다.
+	
+
+}

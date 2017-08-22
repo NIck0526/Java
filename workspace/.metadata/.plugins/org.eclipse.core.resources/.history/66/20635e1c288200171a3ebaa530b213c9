@@ -1,0 +1,46 @@
+package com.store.test;
+
+import com.store.service.OutletStoreService;
+import com.store.util.MyDate;
+import com.store.vo.Customer;
+import com.store.vo.Product;
+
+/*
+ *  Scanner 객체로 실행시점에서 값을 일ㅇ리히 입력 받을 수 없기 떄문에 
+ *  일단 Product, Customer 객체를 생성하고
+ *  특정 Customer가 Product들을 주입받는 상황을 여기서 만들어 놓고
+ *  실행되도록 한다.
+ */
+
+public class OutletStoreServiceTest {
+
+	public static void main(String[] args) {
+		// 1. 고객을 2명을 생성...Store 에서 물건을 구입하는 고객...
+		Customer[] custs = {  //new Customer[2];(배열만들고 생성자 써야함) 그대신 생성자 + 배열 한번에 하기위함
+				new Customer(111, "이효리", "애월읍"),
+				new Customer(222, "이상순", "애월읍")
+		};
+		
+		// 2. 상품들을 생성...
+		Product[ ] pros1= {
+				new Product(123," CJ", "알뜰비누", 1200, new MyDate(2106, 4, 5)),
+				new Product(123," 동원", "고추참치", 3300, new MyDate(2107, 3, 22)),
+				new Product(123," 동원", "장조림", 4500, new MyDate(2106, 12, 5)),
+				new Product(123," 유동", "골뱅이", 3600, new MyDate(2107, 2, 15)),
+				new Product(123," 대우", "공기방울 세탁기", 1200000, new MyDate(2107, 5, 28))
+		};
+		
+		Product[ ] pros2 = {
+				new Product(1888," 맥심", "아메리카노", 7800, new MyDate(2106, 12, 25)),
+				new Product(674," 청정원", "고추장", 2700, new MyDate(2107, 3, 25))
+		};
+		
+		// 3. Service 객체 생성
+		OutletStoreService service = new OutletStoreService();
+		service.printAllProductName(custs[0], pros1);
+		
+
+
+	}
+
+}

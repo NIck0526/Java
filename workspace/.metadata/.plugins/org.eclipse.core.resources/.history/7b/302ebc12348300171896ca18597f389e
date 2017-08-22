@@ -1,0 +1,8 @@
+package team02_KostaEduaction.test;
+
+public class StudentAttendanceTest {
+	public static void main(String[] args) {
+		
+	}
+
+}

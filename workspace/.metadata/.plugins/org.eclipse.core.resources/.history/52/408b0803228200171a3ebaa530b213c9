@@ -1,0 +1,21 @@
+package com.store.service;
+/*
+ * 해당 Store에서 고객들이 상품들을 다루는 기능들만을 모아놓은 서비스 클래스
+ */
+public class OutletStoreService {
+	// 1. 어떤 고객이 구입한 모든 상품들을 콘솔창으로 출력하는 기능
+	
+	public void printAllproductName(Customer c, Product[] pros) { // (Customer c, Product[] pros) 인자값
+		System.out.println("============"+c.getCustName()+" 님이 구입하신 상품입니다...")
+		for(Product p : pros) 
+			System.out.print(p.getModel()+" ");
+			
+		System.out.println();
+			
+		
+	}
+	
+	
+	// 2. 
+
+}

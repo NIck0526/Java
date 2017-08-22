@@ -1,0 +1,17 @@
+package vo.child;
+
+/*
+ *  Sub Class
+ *  ::
+ *  Engineer _ String tech
+ *  Secretary - isBoss boolean
+ */
+
+public class Manager {
+	
+	publis class Manager extends Employee{
+		priate String dept;
+		
+	}
+
+}

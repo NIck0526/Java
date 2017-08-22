@@ -1,0 +1,25 @@
+package poly.service;
+
+import poly.child.Engineer;
+import poly.child.Manager;
+import poly.parent.Employee;
+
+/*
+ * Employee의 하위 클래스들을 Handling 하는 서비스 클래스
+ */
+public class EmployeeService {
+	//1. 객체의 정보를 출력하는 기능을 정의
+	
+	/*public Employee getEmployeeInfo(Employee e) {
+		return e;
+	}
+	public Employee getEmployeeInfo(Manager m) {
+		return m;
+		
+	}
+
+	public Employee getEmployeeInfo(Engineer eg) {
+		return eg;
+	*/
+	}
+}

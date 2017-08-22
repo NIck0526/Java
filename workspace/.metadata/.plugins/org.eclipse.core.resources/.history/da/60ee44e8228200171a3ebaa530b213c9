@@ -1,0 +1,37 @@
+package com.store.service;
+
+import com.store.vo.Customer;
+import com.store.vo.Product;
+
+/*
+ * 해당 Store에서 고객들이 상품들을 다루는 기능들만을 모아놓은 서비스 클래스
+ */
+public class OutletStoreService {
+	// 1. 어떤 고객이 구입한 모든 상품들을 콘솔창으로 출력하는 기능
+	
+	public void printAllproductName(Customer c, Product[] pros) { // (Customer c, Product[] pros) 인자값
+		System.out.println("============"+c.getCustName()+" 님이 구입하신 상품입니다...");
+		for(Product p : pros) 
+			System.out.print(p.getModel()+" ");
+			
+		System.out.println();
+		
+	// 2. 현재 Store에 물건을 구입하기 위한 모든 고객의 정보를 콘솔로 출력
+	// ssn, name, address
+		
+	public void printAllCustomer(Customer[] cuts) {
+		System.out.println("===========고객들의 정보입니다..========");
+		for(Customer c : custs)
+			System.out.println(c.getSsn()+" , "+c.getCustName()+" , "+c.getAddress());
+		
+	}
+		
+
+			
+		
+	
+	
+	
+	// 2. 
+
+}

@@ -1,0 +1,23 @@
+package fly.test;
+
+import fly.Flyer;
+
+public class FlyerAppTest {
+	public static void main(String[] args) {
+		Flyer f1 = new Bird();
+		Flyer f2 = new SuperMan();
+		Flyer f3 = new AirPlane();
+		//Virtual Method Invocation	
+		f1.fly();
+		f2.fly();
+		f3.fly();
+		
+		if(f1 instanceof Bird) {
+			Bird b = (Bird)f1;
+			System.out.println("Âü»õ ¤‹Â±");
+		}
+			
+		
+	}//main
+
+}//class

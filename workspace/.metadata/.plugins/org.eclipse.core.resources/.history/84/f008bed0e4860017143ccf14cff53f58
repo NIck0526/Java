@@ -1,0 +1,23 @@
+package step4.test;
+/*
+ * 6 ::
+ * 
+ */
+class Car{
+	int serialNumber = 0;// =0 하나 안하나 초기화 0임.
+	static int counter;
+	
+	Car() {
+		counter++;
+		serialNumber = counter;
+	}
+	
+}
+public class StaticExamTest {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

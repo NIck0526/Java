@@ -1,0 +1,22 @@
+package com.store.vo;
+
+import com.store.util.MyDate;
+
+/*
+ *  상점에 입고되는 상품에 대한 저오를 담고 있는 vo클래스
+ *  ::
+ *  maker  String
+ *  model  String
+ *  serialNO	int
+ *  price		int
+ *  startDate	MyDate
+ *  
+ */
+public class Product {
+	private int serialNo;
+	private String maker;
+	private String model;
+	private int price;
+	private MyDate myDate
+
+}

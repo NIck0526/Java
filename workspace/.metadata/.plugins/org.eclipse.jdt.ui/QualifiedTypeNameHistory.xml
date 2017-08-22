@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="kosta.cons.test.CarAppTest"/>
+<fullyQualifiedTypeName name="kosta.cons.Car"/>
+<fullyQualifiedTypeName name="kosta.cons.Engine"/>
+<fullyQualifiedTypeName name="kosta.banking.Customer"/>
+<fullyQualifiedTypeName name="kosta.banking.Wallet"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="kosta.banking.Hogu"/>
+<fullyQualifiedTypeName name="java.lang.IncompatibleClassChangeError"/>
+<fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="reference.vo.Person"/>
+<fullyQualifiedTypeName name="reference.service.ProductStoreService"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="reference.self.ProductServiceTest"/>
+<fullyQualifiedTypeName name="reference.self.ProductVOService"/>
+<fullyQualifiedTypeName name="reference.vo.ProductVO"/>
+<fullyQualifiedTypeName name="reference.self.ProductVOSelf"/>
+<fullyQualifiedTypeName name="com.store.service.OutletStoreService"/>
+<fullyQualifiedTypeName name="com.store.util.MyDate"/>
+<fullyQualifiedTypeName name="com.store.vo.Product"/>
+<fullyQualifiedTypeName name="com.store.vo.Customer"/>
+<fullyQualifiedTypeName name="vo.parent.Employee"/>
+<fullyQualifiedTypeName name="vo.child.Manager"/>
+<fullyQualifiedTypeName name="util.MyDate"/>
+<fullyQualifiedTypeName name="team02_KostaEducation2.vo.Student"/>
+<fullyQualifiedTypeName name="poly.child.Manager"/>
+<fullyQualifiedTypeName name="poly.test.EmployeeServiceTest"/>
+<fullyQualifiedTypeName name="poly.service.EmployeeService"/>
+<fullyQualifiedTypeName name="poly.child.Engineer"/>
+<fullyQualifiedTypeName name="poly.parent.Employee"/>
+<fullyQualifiedTypeName name="poly.arg.step1.TV"/>
+<fullyQualifiedTypeName name="poly.arg.step2.Product"/>
+<fullyQualifiedTypeName name="java.util.Vector"/>
+<fullyQualifiedTypeName name="poly.arg.step3.Product"/>
+<fullyQualifiedTypeName name="com.kosta.vo.Student"/>
+<fullyQualifiedTypeName name="step3.test.StaticExamTest"/>
+</qualifiedTypeNameHistroy>

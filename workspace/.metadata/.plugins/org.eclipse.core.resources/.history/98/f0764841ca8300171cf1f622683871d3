@@ -1,0 +1,52 @@
+package poly.test;
+
+import poly.child.Engineer;
+import poly.child.Manager;
+import poly.parent.Employee;
+import poly.service.EmployeeService;
+
+public class EmployeeServiceTest {
+
+	public static void main(String[] args) {
+		//1. 객체새성...
+		Employee e = new Employee("e123", "아이유", "방배동", 450);
+		Manager m = new Manager("m777", "이상순", "제주", 500, "관리자");
+		Engineer eg1 = new Engineer("eg112", "이효리1", "신사동", 400, "Jquery", 230);
+		Engineer eg2 = new Engineer("eg999", "이효리2", "제주", 500, "Driver", 200);
+		
+		//2. Service Class 객체 생성
+		EmployeeService service = new EmployeeService();
+		
+		//3. 객체들의 모든 정보를 출력하는 기능..
+		System.out.println("===========1. print Information :: getEmployeeInfo()=========");
+		Employee emp = service.getEmployeeInfo(e);
+		System.out.println(emp.toString());
+		System.out.println(service.getEmployeeInfo(m));
+		System.out.println(service.getEmployeeInfo(eg1));
+		
+		System.out.println("==========2. print All Information :: getAllEmployeeInfo()===========");
+		Employee[] arr = {e, m, eg1, eg2};
+		service.getAllEmployeeInfo(arr);
+		System.out.println("=========3. print Change Information :: changeAllEmployeeInfo()==========");
+		service.changeEmployeeInfo(arr);
+		
+		System.out.println("***************************************");
+		service.getAllEmployeeInfo(arr);
+		
+		System.out.println("\n==========4. Find Employee By ID :: findEmployeeById()==========");
+		Employee returnEmp = service.findEmployeeById(arr, "egg999");
+		System.out.println(returnEmp);
+		System.out.println("***************************************");		
+		
+		/*Employee[] returnEmp1=service.findEmployeeByAddr(arr, "제주");
+		for(Employee e1 : returnEmp1) {
+			if(e1=null) countinue;
+			System.out.println(e1);
+		}*/
+		
+		System.out.println("\n==========5. Salary :: getAnnualSalary()==========");	
+		System.out.println();
+		
+	}
+
+}

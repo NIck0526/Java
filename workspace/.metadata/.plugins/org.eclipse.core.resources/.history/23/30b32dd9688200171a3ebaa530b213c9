@@ -1,0 +1,12 @@
+package test;
+
+public class EmployeeAppTest1 {
+	public static void main(String[] args) {
+		//1. Employee 클래스를 생성...e...인자값 4
+		//2. Manager 클래스를 생성...m...인자값 5
+		//3. e의 정보를 출력...getDetails()
+		//4. m의 정보를 출력...getDetails()
+		//문제점이 2가지 발생....해결
+
+	}
+}

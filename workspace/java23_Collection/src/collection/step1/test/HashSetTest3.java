@@ -30,7 +30,7 @@ public class HashSetTest3 {
 		//2. 효리를 삭제하세요.
 		System.out.println("3. 효리 삭제 :"+set.remove("효리"));
 		
-		//set.clear();
+		//set.clear()
 		//System.out.println(set);
 		
 		//3. 뽑아보자 ... iterator()

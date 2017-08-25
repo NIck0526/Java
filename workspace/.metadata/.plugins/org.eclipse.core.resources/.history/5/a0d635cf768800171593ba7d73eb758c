@@ -1,0 +1,16 @@
+package collection.step1.test;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class HashSetTest3 {
+	public static void main(String[] args) {
+		Set<String> set = new HashSet<String>();
+		set.add("이효리");
+		set.add("이상순");
+		set.add("아이유");
+		set.add("이상순");
+		
+		System.out.println(set);
+	}
+}

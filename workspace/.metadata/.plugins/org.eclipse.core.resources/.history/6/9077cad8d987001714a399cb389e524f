@@ -1,0 +1,5 @@
+package user.exception;
+
+public class AdultMovie {
+
+}

@@ -1,0 +1,15 @@
+package props.test;
+/*
+ * JDK설치
+ * JRE환경
+ * VM관련 화경변수들이 OS(System)위에 탑재가 된다.
+ * 어떤 환경변수들이 탑재가 되는지 전부다 출력
+ */
+public class PropertiesTest {
+
+	public static void main(String[] args) {
+		System.out.println(System.getProperties());
+
+	}
+
+}

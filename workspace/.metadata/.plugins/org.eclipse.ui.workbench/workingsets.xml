@@ -19,7 +19,7 @@
 <item elementID="=java12_Polymorphism" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=team01_" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=java08_ClassTypeArray2" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=Book_Interface" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Self_Book_Interface" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=java05_Looping" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=kostaPersonManager1" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=team02_KostaEducation2" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
@@ -43,7 +43,7 @@
 <item elementID="=java12_Polymorphism" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=team01_" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=java08_ClassTypeArray2" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=Book_Interface" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Self_Book_Interface" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=java05_Looping" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=kostaPersonManager1" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=team02_KostaEducation2" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>

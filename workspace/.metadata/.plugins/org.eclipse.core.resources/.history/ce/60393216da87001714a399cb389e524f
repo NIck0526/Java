@@ -1,0 +1,46 @@
+package user.exception;
+
+class UnderAgeException extends Exception{
+	UnderAgeException(String cut){
+		super(cut);
+	}
+	
+	UnderAgeException(){
+		this("This is a UserException");
+	}	
+}
+
+
+
+
+
+public class AdultMovie throws UnderAgeException {
+	public void enter(int age) {
+		/*
+		 * 제어문
+		 * 만약에 나이가 19세 이상이면 입장...
+		 * 그렇지 않다면 폭탄터트린다(UnderAgeException)
+		 */
+		int i = 0;
+		System.out.println("표검사를 시작합니다.");
+		if(i <20) throw new UnderAgeException("집으로 돌아가시오.");
+		
+		
+		
+		
+	}
+
+}
+
+
+public class AdultMovieTest2{
+	public static void main(String[] args) {
+		
+		AdultMovie am = new AdultMovie();
+		System.out.println("극장에 들어가다.");
+		
+		
+	}
+	
+}
+

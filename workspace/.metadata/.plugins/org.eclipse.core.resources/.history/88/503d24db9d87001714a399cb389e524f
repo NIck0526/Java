@@ -1,0 +1,19 @@
+package exception.test;
+
+public class RuntimeExceptionTest1 {
+
+	public static void main(String[] args) {
+		String[] str = {
+			"Hello Java", 
+			"No I mean it",
+			"Nice to meet u"
+		};
+		
+		int i = 0;   //메인 메소드 안이라서 이것도 로컬로 되는거??
+		while(i<=3) {
+			System.out.println(str[i]);
+			i++;
+		}
+	}
+
+}

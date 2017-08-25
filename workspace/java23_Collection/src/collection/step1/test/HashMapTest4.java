@@ -56,7 +56,7 @@ public class HashMapTest4 {
 	System.out.print(scores);
 	
 	
-	/*
+	/* 
 	 * score를 이용해서 학생들의 총점과 평균점수를 구해서 출력
 	 * 학생들의 점수중 최고점수를 출력
 	 * ::

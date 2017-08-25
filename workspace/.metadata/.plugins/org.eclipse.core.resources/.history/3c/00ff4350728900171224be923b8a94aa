@@ -1,0 +1,143 @@
+package org.edu.service;
+
+import java.util.ArrayList;
+
+import org.edu.exception.DuplicateSSNException;
+import org.edu.exception.RecordNotFoundException;
+import org.edu.vo.Employee;
+import org.edu.vo.Person;
+import org.edu.vo.Student;
+import org.edu.vo.Teacher;
+
+public class EducationService {
+	private ArrayList<Person> list;
+	public EducationService(int size){
+		list = new ArrayList<Person>();
+	}
+	/*
+	 * Person의 자식을 배열에 추가하는 로직.
+	 * 배열안에 객체를 추가하고 / index는 증가해야 한다.
+	 * 만약에 기존의 배열안에 추가하려는 사람이 이미 있다면
+	 * 추가가 진행되지 않도록 한다.
+	 * DuplicateSSNException을 터뜨린다.
+	 */
+	
+	public void addPerson(Person per)throws DuplicateSSNException{
+		boolean found = false; //추가할 사람이 발견되지 않았다.
+		for(Person p : list) {
+			if(p.getSsn()==per.getSsn()) {//이미 사람이 있다
+				found = true; // ?
+				throw new DuplicateSSNException(per.getName()+":: 그런사람 있어요.");
+			}//if
+		}//for
+		
+		if(found==false)list.add(per);
+		System.out.println(per.getName()+" 님이 회원으로 등록되었다!!");
+	}
+	
+	/*
+	 * 배열안에 들어있는 특정한 사람을 삭제하는 로직
+	 * 이때 삭제하고자하는 사람이 있다면 삭제를 진행...
+	 * (이중 for문을 사용해서....)
+	 * 만약에 삭제하려고 하는 사람이 없다면
+	 * RecoredNotFoundException을 터뜨린다.
+	 */
+	public void deletePerson(int ssn)throws RecordNotFoundException{
+		boolean found = false; // 삭제할 사람이 발견되지 않았다.
+		for(Person p : list){
+			if(p.getSsn()==ssn){//ssn에 해당하는 사람이 있다면
+				found=true;
+				System.out.println(p.getName()+ " 님이 탈퇴 했다!!");
+				list.remove(p);
+				break; //이 break;는 반복문 즉, for를 빠져나가는것.
+			}//if
+		}//for
+		
+		if(found==false)//ssn에 해당하는 사람이 없다면
+			throw new RecordNotFoundException("삭제할 사람이 없어여");
+	}
+	
+	/*
+	 * ssn을 조건으로 주어 특정한 사람을 찾아서 리턴하는 로직
+	 */
+	public Person findPerson(){
+		Person person = null;
+		for(Person p : list) {
+			if(ssn==p.getSsn())
+				person = p;
+		
+		}
+		return person;
+	}
+	
+	public ArrayList findPerson(String address){
+		ArrayList<Person> temp = new ArrayList<Person>();
+		
+		for(Person p : list) {
+			if(address.equals(p.getAddress()))
+				temp.add(p);			
+		}
+		System.out.println(address+" 에 사는 사람은 "+temp.size()+" 명입니다.");
+		return temp;
+	}
+	
+	/*
+	 * 수정할 사람이 없다면 RecordNotFoubndException을 터뜨린다.
+	 * ssn은 수정의 대상이 아니다.
+	 */
+	public void updatePerson(int ssn, Person person)
+			throws RecordNotFoundException{//인자값??
+		boolean found = false;
+		
+		for(Person p : list) {
+			if(person.getSsn()==p.getSsn()) {
+				
+				p.setAddress(person.getAddress());
+				if(p instanceof Employee) {
+					Employee e1 =(Employee)p;
+				e1.setDept(e1.getDept());
+				}
+				if(p instanceof Student) {
+					Student s1 =(Student)p;
+				s1.setStuId(s1.getStuId());
+				}
+				if(p instanceof Teacher) {
+					Teacher t1 =(Teacher)p;
+				t1.setSubject(t1.getSubject());
+				}
+			}//if
+				
+		}//for
+	}	
+	public void getPersons(){
+		for(Person per : p){
+			System.out.println(per);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

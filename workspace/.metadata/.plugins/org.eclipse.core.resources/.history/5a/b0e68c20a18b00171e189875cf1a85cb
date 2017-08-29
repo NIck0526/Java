@@ -1,0 +1,28 @@
+package string.step3.self.test;
+
+import java.util.StringTokenizer;
+
+/*
+ * 출력결과가
+ * JDBC
+ * JSP
+ * EJB
+ */
+public class StringProb1 {
+	public static void main(String[] args) {
+		System.out.println(makeInitial("Java Data Base Conectivity"));
+		System.out.println(makeInitial("Java Server Pages"));
+		System.out.println(makeInitial("Enterprise Java Beans"));
+		
+		
+		
+	}
+
+	private static String makeInitial(String fullName) {
+		StringTokenizer st = new StringTokenizer(fullName, " ");
+		while(st.hasMoreTokens()) {
+			
+		
+		return st.nextToken();
+	}
+}

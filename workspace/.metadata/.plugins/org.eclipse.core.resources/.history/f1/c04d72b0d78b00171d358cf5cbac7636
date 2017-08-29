@@ -1,0 +1,25 @@
+package io.file.test;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class Self_FileReadingTest4 {
+	public static void main(String[] args) throws IOException{
+		String inputfile = "src/hey.txt";
+		String outputfile = "src/heystop.txt";
+		BufferedReader br = new BufferedReader(new FileReader(inputfile));
+		PrintWriter pw = new PrintWriter(new FileWriter(outputfile),true);
+		System.out.println("생성되었당!!!!");
+		
+		//
+		
+		String lineSkill = null;
+		while((lineSkill = br.readLine())!=null) {
+			pw.println(lineSkill);
+		}
+	}
+
+}

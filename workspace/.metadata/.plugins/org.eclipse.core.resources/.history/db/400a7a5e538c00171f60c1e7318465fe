@@ -1,0 +1,26 @@
+package io.file2.test;
+
+import java.io.DataInputStream;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+public class BinaryDataReadingTest {
+
+	public static void main(String[] args) {
+		String fileName = "src/io/file2/watermelon.png";
+		String outFileName = "src/io/file2/melon.png";	
+		FileInputStream fis = new FileInputStream(new DataInputStream(fileName));
+	
+		
+		FileOutputStream fos = new FileOutputStream(new DataOutputStream(outFileName));
+		
+		
+		
+		//1.스트림 생성(4개)
+		
+		//2.읽어들인다. readInt()-1
+		
+		//3.outFileName으로 출력 WriteInt()
+	}
+
+}

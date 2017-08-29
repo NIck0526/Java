@@ -1,0 +1,23 @@
+package file.step1.test;
+
+import java.io.File;
+
+public class FileMethodTestSelf3 {
+	public static void main(String[] args) {
+		File f =new File("C:\\Intel\\lkm\\javaPro\\eclipse\\workspace\\java29_File\\src\\file\\step1\\test\\FileMethodTest1.java");
+		File file = new File("C:\\test\\a.txt");
+		String fileName = f.getName();
+		System.out.println("getName() :: "+ fileName);
+		
+		int position = fileName.indexOf('.');
+		System.out.println(fileName.substring(0, position));
+		System.out.println(fileName.substring(position));
+		
+		System.out.println(f.getAbsolutePath());
+		System.out.println(f.getPath());
+		
+		System.out.println(get);
+		
+	}
+
+}

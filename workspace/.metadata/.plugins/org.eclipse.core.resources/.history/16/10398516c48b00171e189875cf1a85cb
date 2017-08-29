@@ -1,0 +1,22 @@
+package io.file.test;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class FileWritingTest2 {
+
+	public static void main(String[] args)throws IOException {
+		//1.
+		String fileName = "src\\result.txt";
+		FileWriter br = new FileWriter(new PrintWriter(fileName));
+		
+		//2.
+		String line = null;
+		while((line = br.readLine())!=null) {
+			System.out.println(line);
+		}
+		
+
+	}
+
+}

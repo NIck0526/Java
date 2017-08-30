@@ -1,0 +1,32 @@
+package thread.step1.test;
+
+class GThread implements Runnable{
+	int i = 0;
+	
+	@Override
+	public void run() {
+		while(true) {
+			System.out.println("CThread"+i++);
+			if(i==20) break;
+		}
+	}
+	
+	
+	
+
+	
+}
+
+
+public class TreadTest2 {
+
+	public static void main(String[] args) {
+		GThread g = new GThread();
+		CThread g = new CThread(;)
+		Thread t1 = new Thread();
+		Thread t2 = new Thread();
+		
+
+	}
+
+}

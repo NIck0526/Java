@@ -1,0 +1,25 @@
+============= static  키워드에 대한 정리 =========================
+
+1. 객체생성(메모리에 올린다)		    과정 없이 사용할 수 있다
+  ' 메모리에 올라간 애들만 사용할 수 있다'
+2. 미리 메모리에 올라가 있다.
+  컴파일
+  실행 (class file loader과정)에서 메모리에 잡힌다.
+  물론 new를 거쳐서 생성된 것이 아니기 때문에 Heap에 올라가진 않는다.
+  Class Area에 올라간다.
+
+3. main(), static final int SPEED, 
+   Math.random(), Integer.parseInt(),
+   System.in, System.out.println()
+   
+   - static한 성질을 가지는 field나 method는 
+   Class이름.~~~(); 이렇게 접근한다
+
+4. static 하고 절대로 같이 못 쓰이는 키워드는 this.
+   - 그래서 static 블락 안에서는 this사용 못한다.(ex) main 안에서는 못쓴다
+
+5. static은 static 끼리 통한다!!
+
+6. static한 변수는 생성된 객체에서 모두 공유한다.
+   ->> filed(member V)와 static V(class V)에 대한 구분이 되어야 한다.
+   // 바탕화면 > static.comment.txt.저장

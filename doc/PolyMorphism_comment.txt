@@ -1,0 +1,30 @@
+========polymorphism========
+
+java12
+
+
+poly = 여러개
+morphism = 형태, 모습
+
+clothing 부모 클래스
+
+shirt 자식 클래스
+
+
+shirt t1 = new shirt("긴팔")
+shirt t2 = new shirt("원피스")
+
+clothing c = new clothing();
+
+---------polymorphism-------------
+
+clothing shirt = new shirt();
+
+\\\ Overrid된 것때문에 다른 것 나오는 문제점
+
+-> java12
+
+Manager m = (Manager)e1; // Manager로 캐스팅한다
+				m.changeDept("교육부");
+		
+		System.out.println(e1.getDetails());

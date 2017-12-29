@@ -1,9 +1,0 @@
-package kosta.service.dice.impl;
-
-public class DiceAimpl implements Dice {
-	 private int value;
-	 
-	 public DiceAImpl() {
-			System.out.println(":: "+getClass().getName()+"( ) 생성자 호출..");
-
-}

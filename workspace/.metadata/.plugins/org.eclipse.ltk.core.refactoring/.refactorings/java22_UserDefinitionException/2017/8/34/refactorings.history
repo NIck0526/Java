@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;user.exception.AdultMovie&apos; to &apos;AdultMovieTest2&apos;&#x0D;&#x0A;- Original project: &apos;java22_UserDefinitionException&apos;&#x0D;&#x0A;- Original element: &apos;user.exception.AdultMovie&apos;&#x0D;&#x0A;- Renamed element: &apos;user.exception.AdultMovieTest2&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;AdultMovie&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;user.exception{AdultMovie.java[AdultMovie" matchStrategy="1" name="AdultMovieTest2" qualified="false" references="true" similarDeclarations="false" stamp="1503475842805" textual="false" version="1.0"/>
-</session>

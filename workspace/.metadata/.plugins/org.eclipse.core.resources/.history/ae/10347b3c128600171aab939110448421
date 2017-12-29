@@ -1,9 +1,0 @@
-package pizza.parent;
-
-public class Pizza {
-	private int price;
-	private String stroeName;
-	
-	
-
-}
